@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>给你的一封信</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #faf7f2;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+                   "Helvetica Neue", Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.9;
+      margin: 18px 0;
+    }
+    .music {
+      margin: 40px 0;
+      text-align: center;
+    }
+    .music button {
+      background: #e7b8a5;
+      color: white;
+      border: none;
+      padding: 14px 26px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>给你的一封信</h1>
+
+    <p>
+      有些话，当面说会紧张，<br>
+      所以我把它们写在这里。
+    </p>
+
+    <p>
+      如果你愿意，<br>
+      希望你能慢慢看完。
+    </p>
+
+    <div class="music">
+      <p>🎧 建议戴上耳机</p>
+      <button onclick="playMusic()">播放音乐</button>
+      <audio id="lover">
+        <source src="lover.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <p>
+      和你相处的这些时间里，<br>
+      我发现你有很多让我很珍惜的瞬间。
+    </p>
+
+    <p>
+      比如你 ______ 的时候，<br>
+      比如你 ______ 的样子。
+    </p>
+
+    <p>
+      我不知道你看到这些文字时会怎么想，<br>
+      但我想认真地告诉你：
+    </p>
+
+    <p><strong>我喜欢你。</strong></p>
+
+    <p>
+      不管你的答案是什么，<br>
+      我都很珍惜你愿意看到这里。
+    </p>
+
+    <div class="footer">
+      ——
+    </div>
+  </div>
+
+  <script>
+    function playMusic() {
+      document.getElementById("lover").play();
+    }
+  </script>
+</body>
+</html>
